@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Teko:wght@300..700&display=swap');
+
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif; /* Fonte padrão */
+    /* text-decoration: none; */
+}
+
+body {
+    background-color: #27272b; /*  Cor de fundo do corpo da página */
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px; /* Largura máxima da interface */
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex; /* Modelo flexível para o layout */
+}
+
+main {
+    padding-top: 120px; 
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 20px 4%; 
+    position: fixed; 
+    top: 0;
+    width: 100%; /* Faz o header ocupar toda a largura da página */
+    background-color: #27272b; /* Cor de fundo do header */
+    z-index: 1000; /* Para que header fique acima de outros elementos */
+}
+
+header > .interface {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; 
+}
+
+header a:hover {
+    color: #e9a8a8; 
+    transform: scale(1.2); 
+}
+
+.menu-itens a {
+    color: #e9d2df; /* Cor dos links de navegação */
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+header nav ul {
+    list-style-type: none; 
+}
+
+header nav ul li {
+    display: inline-block; 
+    padding: 0 40px; 
+}
+
+/* Estilo do topo do site */
+section.topo-site {
+    padding: 40px 4%; 
+}
+
+section.topo-site .flex {
+    align-items: center; 
+    justify-content: center; 
+    gap: 90px; 
+}
+
+h2.titulo {
+    color: rgb(233, 168, 168); /* Cor dos títulos */
+    font-size: 50px;
+    text-align: center;
+}
+
+.topo-site .img-topo img {
+    width: 500px; /* Largura da imagem do topo */
+}
+
+.topo-site h1 {
+    color: #e9a8a8; /* Cor do nome no topo */
+    font-size: 100px;
+}
+
+.topo-site .txt-topo-site p {
+    color: #e9d2df; /* Cor do texto no topo */
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+/* Estilo "Sobre Mim" */
+.sobre-mim .img-sobre img {
+    width: 430px; 
+}
+
+section.sobre-mim {
+    padding: 40px 4%; 
+    margin: 40px;
+}
+
+section.sobre-mim .flex {
+    align-items: center; 
+    gap: 60px;
+}
+
+.sobre-mim .txt-sobre {
+    color: #e9d2df; /* Cor do texto na seção "Sobre Mim" */
+    margin: 40px;
+}
+
+.sobre-mim .txt-sobre .btn-redes button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25%; /* Bordas arredondadas dos botões */
+    border: none;
+    background-color: #FFEDE9; /* Cor dos botões na seção "Sobre Mim" */
+    font-size: 25px;
+    cursor: pointer;
+    margin: 20px 5px;
+}
+
+button:hover, form .btn-enviar:hover {
+    color: #e9a8a8; /* Cor ao passar o mouse nos botões */
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+
+h4 {
+    font-size: 30px;
+    color: #e9a8a8;
+}
+
+/* Estilo da seção de formação acadêmica */
+section .formacao {
+    padding: 40px 4%; 
+    margin: 40px;
+}
+
+section.formacao .flex {
+    align-items: center; 
+    gap: 60px; 
+}
+
+.txt-formacao p {
+    color: #e9d2df;
+    padding: 10px;
+}
+
+.formacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formacao .txt-formacao {
+    margin: 40px;
+}
+
+.txt-formacao ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.txt-formacao li {
+    margin-bottom: 20px; /
+}
+
+.txt-formacao h4 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo da seção de projetos */
+section.projetos {
+    padding: 40px 4%; 
+}
+
+section.projetos .flex {
+    gap: 60px; 
+}
+
+.projetos .projetos-box {
+    padding: 40px;
+    border: 2px solid rgb(49, 46, 46); /* Bordas dos cards de projetos */
+    margin-top: 45px;
+    border-radius: 20px;
+    background-color: #FFEDE9; /* Cor de fundo dos cards */
+    color: #27272b; /* Cor do texto nos cards */
+}
+
+.projetos .projetos-box:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: rgb(233, 168, 168); 
+}
+
+.projetos .projetos-box i {
+    font-size: 58px;
+    color: rgb(121, 103, 118); /* Cor dos ícones dos cards */
+}
+
+.projetos .projetos-box h3, a {
+    font-size: 25px;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #404044; /* Cor dos títulos dos cards */
+}
+
+/* Estilo da seção de contato */
+section.formulario {
+    padding: 80px 4%; 
+}
+
+form {
+    max-width: 500px; 
+    margin: 0 auto; /* Centraliza o formulário */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%; /* Largura total dos campos */
+    background-color: #FFEDE9; /* Cor de fundo dos campos */
+    border: none;
+    outline: 0;
+    padding: 20px 15px;
+    color: rgb(255, 255, 255); /* Cor do texto nos campos */
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: #404044; /* Cor do placeholder dos campos */
+}
+
+form textarea {
+    resize: none; /* Remove a opção de redimensionar o campo */
+    max-height: 200px; /* altura máxima do campo de texto */
+    color: #404044;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+    width: 120px;
+    background-color: #FFEDE9; /* Cor do botão de enviar */
+    color: #404044; /* Cor do texto do botão de enviar */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Estilo do rodapé */
+footer {
+    padding: 40px; 
+    background-color: #27272b; /* Cor de fundo do rodapé */
+    color: #e9d2df; /* Cor do texto no rodapé */
+    text-align: center;
+    box-shadow: 0 0 40px 10px #796274; /* Sombra do rodapé */
+}

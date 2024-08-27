@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFólio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONTES E ICONES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/005c80c63b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+
+    <!-- INICIO CABEÇALHO -->
+
+    <header>  <!-- Cabeçalho da página -->
+      <div class="interface"> <!--para usar na organização do conteúdo da página-->
+        <div class="logo"> <!--ínício logo-->
+          <a href="index.html">
+            <img
+              class="logo-home"
+              src="img/logo.png"
+              alt="Logo Página"
+              style="width: 165px"
+            />
+          </a>
+        </div><!--fim Logo-->
+        <nav class="menu-itens"> <!--menu de navegação do site-->
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav><!--fim nav-->
+      </div> <!--fim interface-->
+    </header> <!-- fim cabeçalho da página -->
+      <!-- FIM CABEÇALHO -->
+
+    <main>  <!--conteudo principal da página-->
+      <!-- INICIO TOPO -->
+      <section class="topo-site"> <!--seção de inicio do site (topo do site)-->
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site"> <!-- texto do início-->
+              <p>Olá, meu nome é</p>
+              <h1>Natalia Fonseca</h1>
+              <p>Seja bem vindo(a) ao meu Portfólio!</p>
+            </div><!--Fim txt-->
+            <div class="img-topo"> 
+              <img src="img/fig-inicio.svg" alt="" />
+            </div> <!--Fim img topo-->
+          </div> <!--Fim flex-->
+        </div> <!--fim interface-->
+      </section> <!--Fim topo-->
+      <!-- FIM TOPO -->
+
+      <!-- SOBRE MIM -->
+      <section class="sobre-mim">
+        <div class="interface">
+          <h2 class="titulo" id="sobre-mim">Sobre Mim</h2>
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="img/sobre-mim.svg" alt="" />
+            </div> <!--Fim img sobre-->
+          <div class="txt-sobre">
+              <p>
+                Meu nome é Natalia, e atualmente estou estudando Análise e Desenvolvimento de Sistemas. Além da minha paixão por tecnologia, tenho um forte interesse por artes. Como hobby, crio colagens, tanto digitais quanto manuais, que me permitem explorar minha criatividade de maneiras diferentes.
+              </p>
+                <div class="btn-redes"> <!--icone e link das redes-->
+                    <a href="https://www.linkedin.com/in/nataliaa-fonsecaa/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>  
+                    <a href="https://github.com/nataliafonsecaa" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                    <a href="mailto:natalia_fonseca@outlook.com" target="_blank"><button><i class="fa-solid fa-envelope"></i></button></a>
+                </div>
+            </div> <!--Fim txt sobre-->
+          </div> <!--Fim flex-->
+        </div><!--Fim interface-->
+      </section><!--Fim sobre-mim-->
+            <!-- FIM SOBRE MIM -->
+
+            <!-- INÍCIO FORMAÇÃO  -->
+      <section class="formacao"> 
+        <div class="interface">
+          <h2 class="titulo" id="#formacao">Formação Acadêmica</h2>
+          <div class="flex">
+            <div class="txt-formacao">
+              <ul>
+                <li>
+                  <h4>UNINTER Centro Universitário Internacional</h4>
+                  <p>Tecnólogo em Análise e Desenvolvimento de Sistemas · (fevereiro de 2024 - junho de 2026)</p>
+                </li>
+                <li>
+                  <h4>ETEC - Escola Técnica Estadual de São Paulo</h4>
+                  <p>Técnico em Análise e Desenvolvimento de Sistemas · (junho de 2022 - dezembro de 2023)</p>
+                </li>
+                <li>
+                  <h4>Universidade Metodista de São Paulo</h4>
+                  <p>Bacharelado em Rádio, Televisão e Internet · (fevereiro de 2014 - dezembro de 2017)</p>
+                </li>
+              </ul>
+            </div><!--Fim txt-formaçao-->
+          </div><!--Fim flkex-->
+        </div><!--Fim interface-->
+      </section> <!--Fim formação-->
+          <!-- FIM FORMAÇÃO -->
+
+          <!-- INÍCIO PROJETOS  -->
+      <section class="projetos">
+        <div class="interface">
+            <h2 class="titulo" id="projetos"> Meus Projetos</h2>
+            <div class="flex">
+                <div class="projetos-box">
+                    <i class="fa-solid fa-code"></i> <!--icones dos cards-->
+                    <a href="../../paginas/digital/digital.html" target="_blank" ><h3>Galeria de Fotos</h3></a> <!--link dos cards-->
+                    <p>Este site foi criado para compartilhar minhas colagens artísticas e também serve como uma plataforma de estudo em constante aprimoramento. </p>
+                </div><!--Fim projetos-box-->
+                <div class="projetos-box">
+                    <i class="fa-solid fa-code"></i> <!--icones dos cards-->
+                  <a href="https://github.com/sistema-a3/SISTEMA-DE-AGENDAMENTO-DE-AMBIENTES-AUTOMATIZADO" target="_blank" rel="noopener noreferrer"> <h3>SA3</h3></a> <!--link dos cards-->
+                    <p>Desenvolvido como Trabalho de Conclusão de Curso (TCC), este sistema oferece uma solução eficiente e automatizada para o agendamento de ambientes.</p>
+                </div><!--Fim projetos-box-->
+                <div class="projetos-box">
+                    <i class="fa-solid fa-snowplow"></i> <!--icones dos cards-->
+                    <h3>Em construção...</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat corporis totam harum blanditiis suscipit deleniti corrupti minus similique iusto qui</p>
+                </div><!--Fim projetos-box-->
+            </div><!--Fim flex-->
+        </div><!--Fim interface-->
+      </section><!--Fim projetos-->
+      <!-- FIM PROJETOS -->
+
+      <!-- INÍCIO FORMULÁRIO -->
+      <section class="formulario">
+        <div class="interface">
+            <h2 class="titulo" id="contato">Entre em contato!</h2>
+            <form action="">
+                <input type="text" placeholder="Seu Nome">
+                <input type="text" placeholder="Email">
+                <textarea name="" id="">Escreva sua mensagem</textarea>
+                <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+            </form> 
+        </div><!--Fim interface-->
+      </section> <!--Fim formulário-->
+      <!-- FIM FORMULÁRIO -->
+    </main>
+    <footer> <!--rodapé do site -->
+        <div>
+            Criado por Natalia Fonseca @2024
+        </div>
+    </footer>  <!--fim do footer -->
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
+<a href="http://" target="_blank" rel="noopener noreferrer"></a>
